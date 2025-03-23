@@ -18,7 +18,7 @@
 
 .changepasswordbtn{
     color:white;
-    background-color: #7E30E1;
+    background-color: #032491;
     width: 10rem;
     height: 2rem;
     border-radius: 6px;
@@ -31,12 +31,12 @@
     margin-top: 2%;
 }
 .changepasswordbtn:hover{
-    background-color:#bf93f4;
-    color:#7E30E1;
+    background-color:#120144;
+    color:#032491;
 }
 .logoutbtn{
     color:white;
-    background-color: #7E30E1;
+    background-color: #032491;
     width: 10rem;
     height: 2rem;
     border-radius: 6px;
@@ -49,8 +49,8 @@
     margin-top: 4%;
 }
 .logoutbtn:hover{
-    background-color:#bf93f4;
-    color:#7E30E1;
+    background-color:#140048;
+    color:#032491;
 }
 .topleftside{
     margin-top: -20px;

@@ -24,22 +24,22 @@
 
 }
 .h1a{
-    color: #7E30E1;
+    color: #032491;
     font-size: 49px;
 }
 .h1b{
-   color: #7E30E1;
+   color: #032491;
    font-size: 49px;
    margin-top: -0.7rem;
 }
 .h3a{
     margin-top: 2.5rem;
-    color: #7E30E1;
+    color: #032491;
     font-size: 20px;
 }
 .h3b{
-    color: #7E30E1;
-    font-size: 20px;
+    color: #032491;
+    font-size: 20px; 
 }
 .startbut{
     margin-top: 4rem;
@@ -50,7 +50,7 @@
     font-weight: 600;
     border: none;
     cursor: pointer;
-    background-color:#7E30E1;
+    background-color:#032491;
     border-radius: 25px;
     color: white;
     transition: 0.2s ease-in-out;
@@ -62,7 +62,7 @@
 }
 .startbut:hover{
     background-color:#bf93f4;
-    color:#7E30E1;
+    color:#032491;
 }
 .homeright{
     width: 50%;
@@ -93,24 +93,24 @@ img{
         margin-left: 25px;
     }
     .h1a{
-        color: #7E30E1;
+        color: #032491;
         font-size: 40px;
         margin-left: -15px;
     }
     .h1b{
-       color: #7E30E1;
+       color: #032491;
        font-size: 39px;
        margin-top: -0.1rem;
        margin-left: -15px;
     }
     .h3a{
         margin-top: 2.5rem;
-        color: #7E30E1;
+        color: #032491;
         font-size: 16px;
         margin-left: 15px;
     }
     .h3b{
-        color: #7E30E1;
+        color: #032491;
         font-size: 16px;
         margin-left: 45px;
     }
@@ -143,24 +143,24 @@ img{
     width: 100%;
     }
     .h1a{
-        color: #7E30E1;
+        color: #032491;
         font-size: 32px;
         margin-left: 11%;
     }
     .h1b{
-       color: #7E30E1;
+       color: #032491;
        font-size: 31px;
        margin-top: -0.1rem;
        margin-left: -3.5%;
     }
     .h3a{
         margin-top: 1.5rem;
-        color: #7E30E1;
+        color: #032491;
         font-size: 13px;
         margin-left: 16%;
     }
     .h3b{
-        color: #7E30E1;
+        color: #032491;
         font-size: 13px;
         margin-left: 24.5%;
     }

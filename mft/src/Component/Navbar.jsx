@@ -28,7 +28,7 @@ class Navbar extends Component{
                      )
                     })}
                     <Link to="/login">
-                         <button className='logbut'>Login / Sign Up</button>
+                         <button className='logbut'>LOGIN</button>
                     </Link>
                 </ul>
                 </div>

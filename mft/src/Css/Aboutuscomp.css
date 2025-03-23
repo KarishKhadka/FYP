@@ -33,8 +33,8 @@
 .missionsaboutus {
   height: 40%;
   display: flex;
-  background-color: #7E30E1;
-  border-radius: 100px;
+  background-color: #032491;
+  
 }
 .text2aboutus {
   margin-top: 70px;
@@ -81,8 +81,8 @@
   .contactaboutus{
     display: flex;
     color: white;
-    background-color: #7E30E1;
-    border-radius: 100px;
+    background-color: #032491;
+    
 }
 
 

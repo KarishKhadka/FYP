@@ -57,7 +57,7 @@
     
 }
 .nav-links.active {
-    color: #7E30E1;
+    color: #032491;
     opacity: 110%;
 }
 .nav-links-mobile{
@@ -72,7 +72,7 @@
     font-weight: 600;
     border: none;
     cursor: pointer;
-    background-color:#7E30E1;
+    background-color:#032491;
     border-radius: 10px;
     color: white;
     margin-left: 30px;
@@ -86,7 +86,7 @@
 }
 button:hover{
     background-color:#bf93f4;
-    color:#7E30E1;
+    color:#032491;
 }
 .menu-icons{
     display:none;
@@ -137,7 +137,7 @@ button:hover{
     .nav-links{
         margin-right: -10px;
         text-decoration: none;
-        color:#7E30E1;
+        color:#032491;
         font-size: 1.3rem;
         font-weight: 550;
         padding:0.7rem 0.8rem;
@@ -182,7 +182,7 @@ button:hover{
 
     }
     .nav-links:hover{
-        background: #7E30E1;
+        background: #032491;
         transition: none;
         color: #fff;
     }
@@ -197,7 +197,7 @@ button:hover{
         margin: auto;
         border-radius: 4px;
         width: 80%;
-        background: #7E30E1;
+        background: #032491;
         text-decoration: none;
         color: #fff;
         font-size: 1.2rem;

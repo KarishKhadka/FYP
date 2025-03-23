@@ -45,7 +45,7 @@
     padding-top: 10px;
 }
 .chooseacc{
-    color:#6323B4;
+    color:#032491;
     font-size: 30px;
     margin-top: 10px;
 }
@@ -53,7 +53,7 @@
     text-decoration: none;
 }
 #sg{
-    color: #7E30E1;
+    color: #032491;
     text-decoration: none;
     font-size:18px;
     padding-top: 10px;
@@ -120,7 +120,7 @@
 
 #email{
     margin-top: 2px;
-    color: #7E30E1;
+    color: #032491;
     width: 74%;
     display: flex;
     padding: 8px;
@@ -129,7 +129,7 @@
     margin-top: 14px;
     width: 74%;
     display: flex;
-    color: #7E30E1;
+    color: #032491;
     padding: 8px;
 
 }
@@ -164,11 +164,11 @@
     box-shadow: 0 0 0 2px #965de0; 
 }
 #passwordbox:focus {
-  box-shadow: 0 0 0 2px #965de0;
+  box-shadow: 0 0 0 2px #000000;
 }
 #button2log{
     color:white;
-    background-color: #7E30E1;
+    background-color: #032491;
     width: 13rem;
     height:2.5rem;
     margin-top: 3rem;

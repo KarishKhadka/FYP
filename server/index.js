@@ -12,8 +12,8 @@ const addcourseRouter = require('./Components/AddCourse');
 const addeventRouter = require('./Components/AddEvent');
 const addinstructorRouter = require('./Components/AddInstructor');
 const addstudentRouter = require('./Components/AddStudents');
-const StudentData = require('./Components/StudentData');
-const InstructorData = require('./Components/InstructorData');
+// const StudentData = require('./Components/StudentData');
+// const InstructorData = require('./Components/InstructorData');
 
 
 
