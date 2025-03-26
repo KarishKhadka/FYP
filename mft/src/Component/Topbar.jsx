@@ -128,7 +128,7 @@ const fetchNotice = async () =>{
         const data = await response.json();
         setNotices(data);
     } catch(error){
-        console.error('Erro fetching Notice:', error);
+        console.error('Error fetching Notice:', error);
 
     }
 }

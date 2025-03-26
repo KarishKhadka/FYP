@@ -28,16 +28,16 @@
 }
 .admlinks:hover{
     opacity: 100%;
-    color: #bf93f4;
+    color: #032491;
 }
 .admlinks.active {
     
-    background-color: #7E30E1;
+    background-color: #032491;
     color: white;
     opacity: 110%;
 }
 .adm-active{
-    background-color: #7E30E1;
+    background-color: #032491;
     color: white;
     opacity: 110%;
 }
@@ -84,17 +84,17 @@
     }
     .admlinks:hover{
         opacity: 100%;
-        color: #bf93f4;
+        color: #003cff;
     }
     .admlinks.active {
     
-        background-color: #7E30E1;
+        background-color: #032491;
         color: white;
         opacity: 110%;
     }
     
     .adm-active{
-        background-color: #7E30E1;
+        background-color: #032491;
         color: white;
         opacity: 110;
     }
@@ -143,17 +143,17 @@
     }
     .admlinks:hover{
         opacity: 100%;
-        color: #bf93f4;
+        color: #003cff;
     }
     .admlinks.active {
     
-        background-color: #7E30E1;
+        background-color: #032491;
         color: white;
         opacity: 110%;
     }
     
     .adm-active{
-        background-color: #7E30E1;
+        background-color: #032491;
         color: white;
         opacity: 110;
     }
