@@ -18,7 +18,7 @@ export const Adminlink = [
     icon: <LibraryBooksIcon fontSize='35px'/>,
   },
   {
-    title: "Instructors",
+    title: "Teachers",
     url: "/admininstructor",
     cName: "admdash-links",
     icon : <FontAwesomeIcon icon={faPersonChalkboard} fontSize={35}/>,

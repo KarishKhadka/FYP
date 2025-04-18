@@ -112,7 +112,7 @@ return(
                         </div>
                         <div className={`teach ${userType === 'teacher' ? 'selected' : ''}`} onClick={() => selectUserType('teacher')}>
                             <img src={instructorimg} alt="" className="instimg"></img>
-                            <h2 className="instruct">teacher</h2>
+                            <h2 className="instruct">Instructor</h2>
                         </div>
                         <div className={`adm ${userType === 'admin' ? 'selected' : ''}`} onClick={() => selectUserType('admin')}>
                             <img src={adminimg} alt="" className="admiimg"></img>

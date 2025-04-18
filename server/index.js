@@ -12,9 +12,12 @@ const addcourseRouter = require('./Components/AddCourse');
 const addeventRouter = require('./Components/AddEvent');
 const addinstructorRouter = require('./Components/AddInstructor');
 const addstudentRouter = require('./Components/AddStudents');
-// const StudentData = require('./Components/StudentData');
-// const InstructorData = require('./Components/InstructorData');
 
+const EditandDeleteFolder = require('./Components/EditandDeleteFolder');
+const EditandDeleteFiles = require('./Components/EditandDeleteFiles');
+const InstructorData = require('./Components/InstructorData');
+
+// const StudentData = require('./Components/StudentData');
 
 
 
@@ -28,7 +31,25 @@ app.use('/events', addeventRouter);
 app.use('/instructors', addinstructorRouter);
 app.use('/students', addstudentRouter);
 
+// app.use('/courses', createFolder);
+app.use('/courses', EditandDeleteFolder );
+// app.use('/courses', SaveFiles);
+app.use('/courses', EditandDeleteFiles);
+// app.use('/courses', editcourseRouter);
+// app.use('/courses', deletecourseRouter);
 
+app.use('/events', addeventRouter);
+// app.use('/events', editeventRouter);
+// app.use('/events', deleteeventRouter);
+app.use('/instructors', addinstructorRouter);
+// app.use('/instructors', editinstructorRouter);
+// app.use('/instructors', deleteinstructorRouter);
+app.use('/students', addstudentRouter);
+// app.use('/students', editstudentRouter);
+// app.use('/students', deletestudentRouter);
+app.use('/details', InstructorData);
+
+// app.use('/courses', createFolder);
 
 
 

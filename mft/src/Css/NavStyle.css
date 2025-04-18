@@ -85,8 +85,8 @@
     
 }
 button:hover{
-    background-color:#130425;
-    color:#032491;
+    background-color:#331cde;
+    color:#fafafa;
 }
 .menu-icons{
     display:none;
@@ -137,7 +137,7 @@ button:hover{
     .nav-links{
         margin-right: -10px;
         text-decoration: none;
-        color:#032491;
+        color:#7E30E1;
         font-size: 1.3rem;
         font-weight: 550;
         padding:0.7rem 0.8rem;
@@ -182,7 +182,7 @@ button:hover{
 
     }
     .nav-links:hover{
-        background: #032491;
+        background: #7E30E1;
         transition: none;
         color: #fff;
     }
@@ -197,7 +197,7 @@ button:hover{
         margin: auto;
         border-radius: 4px;
         width: 80%;
-        background: #032491;
+        background: #7E30E1;
         text-decoration: none;
         color: #fff;
         font-size: 1.2rem;

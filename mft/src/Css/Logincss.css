@@ -161,7 +161,7 @@
     padding-left: 1%;
 }
 #emailbox:focus {
-    box-shadow: 0 0 0 2px #965de0; 
+    box-shadow: 0 0 0 2px #755aea; 
 }
 #passwordbox:focus {
   box-shadow: 0 0 0 2px #000000;
@@ -182,8 +182,8 @@
 
 }
 #button2log:hover{
-    background-color:#bf93f4;
-    color:#7E30E1;
+    background-color:#5a6fb5;
+    color:#fdfcff;
 }
 .forpw{
     margin-left: 25.3rem;
@@ -202,7 +202,7 @@
     margin-left: 68%;
     margin-top: -1.7rem;
     cursor: pointer;
-    color: #7E30E1;
+    color: #032491;
 }
 
 @media screen and (max-width: 1024px) {

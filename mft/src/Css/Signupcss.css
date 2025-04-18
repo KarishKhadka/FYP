@@ -49,7 +49,7 @@
     text-decoration: none;
 }
 #loglink_l{
-    color:#7E30E1;
+    color:#032491;
     text-decoration: none;
     font-size:18px;
     font-weight: bold;
@@ -63,7 +63,7 @@
 }
 #la1{
     margin-top: 0px;
-    color: #7E30E1;
+    color: #032491;
     width: 65%;
     display: flex;
     padding: 8px;
@@ -71,7 +71,7 @@
 }
 #la2{
     margin-top: 10px;
-    color: #7E30E1;
+    color: #032491;
     width: 65%;
     display: flex;
     padding: 8px;
@@ -81,14 +81,14 @@
     margin-top: 10px;
     width: 65%;
    display: flex;
-    color: #7E30E1;
+    color: #032491;
     padding: 8px;
     font-size: 18px;
 
 }
 #la4{
     margin-top: 18px;
-    color: #7E30E1;
+    color: #032491;
     width: 65%;
     display: flex;
     padding: 8px;
@@ -152,15 +152,15 @@
     padding-left: 1%
 }
 #usernamesignbox:hover, #emailsignbox:hover, #passsignbox:hover, #conpasssignbox:hover{
-    box-shadow: 0 0 0 2px #965de0;
+    box-shadow: 0 0 0 2px #032491;
   }
 
   #usernamesignbox.selected, #emailsignbox.selected, #passsignbox.selected, #conpasssignbox.selected{
-    box-shadow: 0 0 0 2px #965de0;
+    box-shadow: 0 0 0 2px #032491;
   }
 #buttonsign{
     color:white;
-    background-color: #7E30E1;
+    background-color: #032491;
     width: 13rem;
     height:2.5rem;
     margin-top: 3rem;
@@ -174,20 +174,20 @@
 
 }
 #buttonsign:hover{
-    background-color:#bf93f4;
-    color:#7E30E1;
+    background-color:#331cde;
+    color:#ffffff;
 }
 #eye1{
     margin-left: 60%;
     margin-top: -1.7rem;
     cursor: pointer;
-    color: #7E30E1;
+    color: #032491;
 }
 #eye2{
     margin-left: 60%;
     margin-top: -1.7rem;
     cursor: pointer;
-    color: #7E30E1;
+    color: #032491;
 }
 .passstrength{
     font-size: 12px;
