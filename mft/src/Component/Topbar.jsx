@@ -143,7 +143,7 @@ useEffect(() =>{
                 </div>
                 <div className='toprightside'>
                     <NotificationsNoneIcon className='topbarnotify' fontSize="40px" onClick={opennotificationModal}/>
-                    <ChatBubbleOutlineIcon className='topbarchat' fontSize="40px"/>
+                    {/* <ChatBubbleOutlineIcon className='topbarchat' fontSize="40px"/> */}
                     <AccountCircleIcon className='topbarprofile' fontSize="40px" onClick={openprofileModal}/>
                 </div>
             </nav>

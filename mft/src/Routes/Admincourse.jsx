@@ -198,12 +198,12 @@ const fetchCourses = async () => {
                             <div className="col">Course Duration(in weeks)</div>
                             <div className="col">Actions</div>
                         </div>
-                        {courses.map(course => (
-                        <div className="row" key={course._id}>
-                            <div className="col">{course.courseId}</div>
-                            <div className="col">{course.courseTitle}</div>
-                            <div className="col">{course.courseCode}</div>
-                            <div className="col">{course.courseDuration}</div>
+                        {courses?.map(course => (
+                        <div className="row" key={course?._id}>
+                            <div className="col">{course?.courseId}</div>
+                            <div className="col">{course?.courseTitle}</div>
+                            <div className="col">{course?.courseCode}</div>
+                            <div className="col">{course?.courseDuration}</div>
                             <div className="col">
                             <button className="btn btn-edit mr-2" onClick={() => handleOpencrsEditModal(course)}>
                             <i className="fa-solid fa-pen"></i>

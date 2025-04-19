@@ -99,19 +99,19 @@ function InstGrade() {
     };
     return (
         <>
-            {submissions && submissions.map((submission) => (
+            {submissions && submissions?.map((submission) => (
                 <Card key={submission._id} style={{ minwidth: '58rem', marginBottom: '20px', width: 'auto', boxShadow: '0 2px 4px 0 rgba(0,0,0,0.2)' }}>
                     <Card.Body>
                         <div className="row align-items-start">
                             <div className="col" style={{ textAlign: 'left' }}>
-                                <Card.Title className="text-left"><strong>{submission.assignmentId?.name}</strong></Card.Title>
+                                <Card.Title className="text-left"><strong>{submission?.assignmentId?.name}</strong></Card.Title>
                             </div>
                             <div className='col-auto ml-auto'>
-                                <Card.Title className="text-right">Submitted By: {submission.studentName}</Card.Title>
+                                <Card.Title className="text-right">Submitted By: {submission?.studentName}</Card.Title>
                             </div>
                         </div>
                         <div className='row justify-content-start'>
-                            <Card.Text className="text-left" onClick={() => handleFileClick(submission)} style={{ cursor: 'pointer', fontSize: '20px' }}>{submission.fileName}</Card.Text>
+                            <Card.Text className="text-left" onClick={() => handleFileClick(submission)} style={{ cursor: 'pointer', fontSize: '20px' }}>{submission?.fileName}</Card.Text>
                             <text><a style={{ textDecoration: 'none', fontSize: '18px', color: '#7E30E1' }} href={`http://localhost:3001/submissions/${submission.fileName}`} target="_blank" rel="noopener noreferrer">View File</a></text>
                         </div>
                         <div className="row justify-content-end" >

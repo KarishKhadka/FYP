@@ -1,10 +1,6 @@
 const mongoose = require('mongoose');
 
-const AssignmentSchema = new mongoose.Schema({
-    name: {
-        type: String,
-        required: true
-    },
+const NotificationSchema = new mongoose.Schema({
     description: {
         type: String,
         required: true
@@ -13,15 +9,17 @@ const AssignmentSchema = new mongoose.Schema({
         type: Date,
         required: true
     },
+    teacher: {
+        type: String,
+        required: true
+    },
     courseId: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Course', 
-        required: true
+        ref: 'Courses'
     },
     
 }, { timestamps: true }); 
 
-const AssignmentModel = mongoose.model('Assignments', AssignmentSchema);
+const NotificationModel = mongoose.model('Notifications', NotificationSchema);
 
-
-module.exports = AssignmentModel;
+module.exports = NotificationModel;

@@ -94,7 +94,7 @@ const handleClosenotificationDeleteModal = () =>{
    <Card.Body>
        <div className="row align-items-start">
            <div className="col" style={{ textAlign: 'left' }}>
-               <Card.Text className="text-left">{notification.description}</Card.Text>
+               <Card.Text className="text-left">{notification?.description}</Card.Text>
            </div>
            <div className='col-auto ml-auto'>
                <button className="btn btn-edit" onClick={() => handleOpennotificationEditModal(notification)}>
@@ -108,12 +108,12 @@ const handleClosenotificationDeleteModal = () =>{
        <div className="row justify-content-between" style={{marginTop:'1.5%'}}>
             <div className="col-auto">
                 <Card.Text>
-                    <strong>Notified By:</strong>  <span className="notifiedteacher">{notification.teacher}</span>
+                    <strong>Notified By:</strong>  <span className="notifiedteacher">{notification?.teacher}</span>
                 </Card.Text>
             </div>
             <div className="col-auto">
                 <Card.Text>
-                    <strong>Notified On:</strong> <span className='notifieddate'>{new Date(notification.date).toLocaleDateString()}</span>
+                    <strong>Notified On:</strong> <span className='notifieddate'>{new Date(notification?.date).toLocaleDateString()}</span>
                 </Card.Text>
             </div>
        </div>

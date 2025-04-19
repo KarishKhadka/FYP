@@ -125,10 +125,10 @@ const handleClosefolderDeleteModal = () =>{
     <>
     <Accordion defaultActiveKey="0" flush>
       {folders &&
-        folders.map((folder, index) => (
+        folders?.map((folder, index) => (
           <Card key={folder._id}>
             <Accordion.Item eventKey={index.toString()}>
-              <Accordion.Header>{folder.name} </Accordion.Header>
+              <Accordion.Header>{folder?.name} </Accordion.Header>
               <Accordion.Body>
               <div className="d-flex justify-content-end">
                     <button className="btn btn-edit mr-2" onClick={() => handleOpenfolderEditModal(folder)}>

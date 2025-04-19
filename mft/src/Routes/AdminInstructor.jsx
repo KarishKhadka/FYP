@@ -195,11 +195,11 @@ const AdminInstructor =()=> {
                             <div className="col">Instructor Email</div>
                             <div className="col">Actions</div>
                         </div>
-                        {instructors.map(instructor => (
-                        <div className="row" key={instructor._id}>
-                            <div className="col">{instructor.instructorId}</div>
-                            <div className="col">{instructor.instructorName}</div>
-                            <div className="col">{instructor.email}</div>
+                        {instructors?.map(instructor => (
+                        <div className="row" key={instructor?._id}>
+                            <div className="col">{instructor?.instructorId}</div>
+                            <div className="col">{instructor?.instructorName}</div>
+                            <div className="col">{instructor?.email}</div>
                             <div className="col">
                             <button className="btn btn-edit mr-2" onClick={() => handleOpeninstEditModal(instructor)}>
                             <i className="fa-solid fa-pen"></i>

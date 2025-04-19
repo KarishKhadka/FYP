@@ -89,13 +89,13 @@ const handleCloseassignmentDeleteModal = () =>{
 }
   return (
     <>
-    {assignments && assignments.map((assignment) => (
+    {assignments && assignments?.map((assignment) => (
    <Card key={assignment._id} style={{ minwidth: '58rem', marginBottom: '20px', width:'auto', boxShadow:'0 2px 4px 0 rgba(0,0,0,0.2)' }}>
    <Card.Body>
        <div className="row align-items-start">
            <div className="col" style={{ textAlign: 'left' }}>
-               <Card.Title className="text-left"><strong>{assignment.name}</strong></Card.Title>
-               <Card.Text className="text-left">{assignment.description}</Card.Text>
+               <Card.Title className="text-left"><strong>{assignment?.name}</strong></Card.Title>
+               <Card.Text className="text-left">{assignment?.description}</Card.Text>
            </div>
            <div className='col-auto ml-auto'>
                <button className="btn btn-edit" onClick={() => handleOpenassignmentEditModal(assignment)}>
@@ -109,7 +109,7 @@ const handleCloseassignmentDeleteModal = () =>{
        <div className="row justify-content-end">
             <div className="col-auto">
                 <Card.Text>
-                    <strong>Due Date:</strong> {new Date(assignment.date).toLocaleDateString()}
+                    <strong>Due Date:</strong> {new Date(assignment?.date).toLocaleDateString()}
                 </Card.Text>
             </div>
        </div>

@@ -196,11 +196,11 @@ const fetchEvents = async () => {
                             <div className="col">Event Date</div>
                             <div className="col">Actions</div>
                         </div>
-                        {events.map(event => (
-                        <div className="row" key={event._id}>
-                            <div className="col">{event.eventId}</div>
-                            <div className="col">{event.eventTitle}</div>
-                            <div className="col">{event.eventDate}</div>
+                        {events?.map(event => (
+                        <div className="row" key={event?._id}>
+                            <div className="col">{event?.eventId}</div>
+                            <div className="col">{event?.eventTitle}</div>
+                            <div className="col">{event?.eventDate}</div>
                             <div className="col">
                             <button className="btn btn-edit mr-2" onClick={() => handleOpeneventEditModal(event)}>
                             <i className="fa-solid fa-pen"></i>

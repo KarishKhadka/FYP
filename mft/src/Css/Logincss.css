@@ -161,7 +161,7 @@
     padding-left: 1%;
 }
 #emailbox:focus {
-    box-shadow: 0 0 0 2px #755aea; 
+    box-shadow: 0 0 0 2px #032491; 
 }
 #passwordbox:focus {
   box-shadow: 0 0 0 2px #000000;
@@ -192,7 +192,7 @@
 #resetlog{
     text-decoration: none;
     font-weight: bold;
-    color:#7E30E1;
+    color:#032491;
     font-size: 18px;
 }
 #forgotlink{

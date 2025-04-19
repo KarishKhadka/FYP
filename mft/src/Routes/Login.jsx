@@ -28,28 +28,28 @@ const Login=()=>{
         .then(result => {
             console.log('Login result:',result);
 
-            const { accessToken, userType, studentName, teacherName, studentId, teacherId, adminId, studentEmail, teacherEmail, adminEmail } = result.data;
+            const { accessToken, userType, studentName, instructorName, studentId, instructorId, adminId, studentEmail, instructorEmail, adminEmail } = result.data;
                     if (accessToken && userType) {
                     sessionStorage.setItem('token', accessToken);
                     sessionStorage.setItem('userType', userType);
                     sessionStorage.setItem('studentName', studentName);
-                    sessionStorage.setItem('teacherName', teacherName);
+                    sessionStorage.setItem('instructorName', instructorName);
                     sessionStorage.setItem('adminId', adminId);
                     sessionStorage.setItem('studentEmail', studentEmail);
-                    sessionStorage.setItem('teacherEmail', teacherEmail);
+                    sessionStorage.setItem('instructorEmail', instructorEmail);
                     sessionStorage.setItem('adminEmail', adminEmail);
                     if (userType === 'student') {
                         sessionStorage.setItem('studentId', studentId);
-                    } else if (userType === 'teacher') {
-                        sessionStorage.setItem('teacherId', teacherId);
+                    } else if (userType === 'instructor') {
+                        sessionStorage.setItem('instructorId', instructorId);
                     }
 
                     switch (userType) {
                         case 'student':
                         navigate('/studentdash');
                         break;
-                        case 'teacher':
-                        navigate('/teacherdash');
+                        case 'instructor':
+                        navigate('/instructordash');
                         break;
                         case 'admin':
                         navigate('/admindash');
@@ -110,7 +110,7 @@ return(
                             <img src={studentimg} alt="" className="studimg"></img>
                             <h2 className="student">Student</h2>
                         </div>
-                        <div className={`teach ${userType === 'teacher' ? 'selected' : ''}`} onClick={() => selectUserType('teacher')}>
+                        <div className={`teach ${userType === 'teacher' ? 'selected' : ''}`} onClick={() => selectUserType('instructor')}>
                             <img src={instructorimg} alt="" className="instimg"></img>
                             <h2 className="instruct">Instructor</h2>
                         </div>

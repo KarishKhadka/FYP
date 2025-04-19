@@ -9,15 +9,36 @@ const InstructorModel = require('./models/Instructor');
 require("dotenv").config();
 const axios = require('axios');
 const addcourseRouter = require('./Components/AddCourse');
+const editcourseRouter = require('./Components/EditCourse');
+const deletecourseRouter = require('./Components/DeleteCourse');
 const addeventRouter = require('./Components/AddEvent');
+const editeventRouter = require('./Components/EditEvent');
+const deleteeventRouter = require('./Components/DeleteEvent');
 const addinstructorRouter = require('./Components/AddInstructor');
+const editinstructorRouter = require('./Components/EditInstructor');
+const deleteinstructorRouter = require('./Components/DeleteInstructor');
 const addstudentRouter = require('./Components/AddStudents');
-
+const editstudentRouter = require('./Components/EditStudents');
+const deletestudentRouter = require('./Components/DeleteStudent');
+const createFolder = require('./Components/CreateFolder');
+const SaveFiles = require('./Components/SaveFiles');
 const EditandDeleteFolder = require('./Components/EditandDeleteFolder');
 const EditandDeleteFiles = require('./Components/EditandDeleteFiles');
+const createAssignment = require('./Components/CreateAssignment');
+const EditandDeleteAssignment = require('./Components/EditandDeleteAssignment');
+const StudentData = require('./Components/StudentData');
 const InstructorData = require('./Components/InstructorData');
-
-// const StudentData = require('./Components/StudentData');
+const SubmitAssignments = require('./Components/SubmitAssignments');
+const SubmissionController = require('./Components/SubmissionController');
+const FetchSubmission = require('./Components/FetchSubmission');
+const SubmitGrades = require('./Components/SubmitGrades');
+const GradeData = require('./Components/GradeData');
+const FetchStudents = require('./Components/FetchStudents');
+const ViewProgress = require('./Components/ViewProgress');
+const CreateNotifications = require('./Components/CreateNotifications');
+const EditandDeleteNotification = require('./Components/EditandDeleteNotification');
+const FetchNotice = require('./Components/FetchNotice');
+const FetchMessage = require('./Components/FetchMessage');
 
 
 
@@ -25,39 +46,44 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 app.use('/courses', addcourseRouter);
-
-app.use('/events', addeventRouter);
-
-app.use('/instructors', addinstructorRouter);
-app.use('/students', addstudentRouter);
-
-// app.use('/courses', createFolder);
+app.use('/courses', editcourseRouter);
+app.use('/courses', deletecourseRouter);
+app.use('/courses', createFolder);
 app.use('/courses', EditandDeleteFolder );
-// app.use('/courses', SaveFiles);
+app.use('/courses', SaveFiles);
 app.use('/courses', EditandDeleteFiles);
-// app.use('/courses', editcourseRouter);
-// app.use('/courses', deletecourseRouter);
-
+app.use('/courses', createAssignment);
+app.use('/courses', EditandDeleteAssignment);
 app.use('/events', addeventRouter);
-// app.use('/events', editeventRouter);
-// app.use('/events', deleteeventRouter);
+app.use('/events', editeventRouter);
+app.use('/events', deleteeventRouter);
 app.use('/instructors', addinstructorRouter);
-// app.use('/instructors', editinstructorRouter);
-// app.use('/instructors', deleteinstructorRouter);
+app.use('/instructors', editinstructorRouter);
+app.use('/instructors', deleteinstructorRouter);
 app.use('/students', addstudentRouter);
-// app.use('/students', editstudentRouter);
-// app.use('/students', deletestudentRouter);
+app.use('/students', editstudentRouter);
+app.use('/students', deletestudentRouter);
+app.use('/uploads', express.static('./uploads'));
+app.use('/details', StudentData);
 app.use('/details', InstructorData);
-
-// app.use('/courses', createFolder);
+app.use('/assignment', SubmitAssignments);
+app.use('/assignment', SubmissionController);
+app.use('/courses', FetchSubmission);
+app.use('/courses', SubmitGrades)
+app.use('/submissions', express.static('./submissions'))
+app.use('/courses', GradeData);
+app.use('/courses', FetchStudents);
+app.use('/courses', ViewProgress);
+app.use('/courses', CreateNotifications);
+app.use('/courses', EditandDeleteNotification);
+app.use('/notices', FetchNotice);
+app.use('/lms', FetchMessage);
 
 
 
 
 
 mongoose.connect("mongodb://127.0.0.1:27017/lms");
-
-// mongoose.connect("mongodb://localhost:27017/lms");
 
 const generateAccessToken = (user) => {
   return jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, { expiresIn: '1h' });
@@ -230,8 +256,49 @@ app.post('/register', async (req, res) => {
 
   return studentId;
 }
+const GBOOKS_API_KEY = process.env.GBOOKS_API_KEY;
 
+app.get('/searchbooks', async (req, res) => {
+  const{ query } = req.query;
+  try {
+    const response = await axios.get(`https://www.googleapis.com/books/v1/volumes?q=${query}&maxResults=12&key=${GBOOKS_API_KEY}`);
+    const books = response.data.items.map(item => ({
 
+      id: item.id,
+      title: item.volumeInfo.title,
+      author: item.volumeInfo.authors ? item.volumeInfo.authors.join(', ') : 'Unknown Author',
+      coverUrl: item.volumeInfo.imageLinks ? item.volumeInfo.imageLinks.thumbnail : null,
+      description: item.volumeInfo.description || 'No description available.',
+    }))
+    res.json(books);
+  } catch (error) {
+    console.error('Error fetching books:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+app.get('/staticbooks', async (req, res) => {
+  try {
+    const programmingResponse = await axios.get(`https://www.googleapis.com/books/v1/volumes?q=programming&maxResults=6&key=${GBOOKS_API_KEY}`);
+    const educationResponse = await axios.get(`https://www.googleapis.com/books/v1/volumes?q=education&maxResults=6&key=${GBOOKS_API_KEY}`);
+    
+    const books = [
+      ...programmingResponse.data.items,
+      ...educationResponse.data.items
+    ].map(item => ({
+      id: item.id,
+      title: item.volumeInfo.title,
+      author: item.volumeInfo.authors ? item.volumeInfo.authors.join(', ') : 'Unknown Author',
+      coverUrl: item.volumeInfo.imageLinks ? item.volumeInfo.imageLinks.thumbnail : null,
+      description: item.volumeInfo.description || 'No description available.',
+
+    }));
+    
+    res.json(books);
+  } catch (error) {
+    console.error('Error fetching static books:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
 
 app.listen(3001, () =>{
     console.log("server is running")

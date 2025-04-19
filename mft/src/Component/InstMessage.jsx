@@ -227,12 +227,18 @@ function InstMessage() {
     };
 
     useEffect(() => {
+        let interval;
         if (selectedGroup && loggedInInstructorId) {
             const isInstructorInGroup = groupMembers.instructors?.some(member => member._id === loggedInInstructorId);
             if (isInstructorInGroup) {
                 fetchMessages();
+
+                interval = setInterval(() => {
+                    fetchMessages();
+                }, 2000); 
             }
         }
+        return () => clearInterval(interval);
     }, [selectedGroup, loggedInInstructorId, groupMembers]);
 
     const handleOpenGroupDeleteModal = (group) => {
@@ -253,10 +259,10 @@ function InstMessage() {
                     <div className='instgrouplist'>
                         <h4>Groups</h4>
                         <ul>
-                            {groups.map((group) => (
-                                <li className="groupnamelink d-flex justify-content-between align-items-center" key={group.id} onClick={() => handleGroupSelection(group)}>
-                                    <span>{group.name}</span>
-                                    {loggedInInstructorId === group.groupAdmin && (
+                            {groups?.map((group) => (
+                                <li className="groupnamelink d-flex justify-content-between align-items-center" key={group?.id} onClick={() => handleGroupSelection(group)}>
+                                    <span>{group?.name}</span>
+                                    {loggedInInstructorId === group?.groupAdmin && (
                                         <button className="btn btn-delete" onClick={() => handleOpenGroupDeleteModal(group)}>
                                             <i className="fa-solid fa-trash" style={{ fontSize: '20px' }}></i>
                                         </button>
@@ -282,15 +288,15 @@ function InstMessage() {
                     </div>
                     {selectedGroup && (
                         <>
-                            {groupMembers.instructors?.some(member => member._id === loggedInInstructorId) ? (
+                            {groupMembers?.instructors?.some(member => member._id === loggedInInstructorId) ? (
                                 <>
                                     <div className='instchatalllive'>
-                                        {messages.map((message, index) => (
-                                            <div key={index} className={`instchatbubble ${message.senderId && message.senderId._id.toString() === loggedInInstructorId ? 'instchatbubbleright' : 'instchatbubbleleft'}`}>
-                                                {message.senderId && message.senderId._id.toString() !== loggedInInstructorId && (
-                                                    <p className='instsendername'>{message.senderType === 'Instructor' ? (message.senderId ? message.senderId.instructorName : 'Unknown Instructor') : (message.senderId ? message.senderId.studentName : 'Unknown Student')}</p>
+                                        {messages?.map((message, index) => (
+                                            <div key={index} className={`instchatbubble ${message?.senderId && message?.senderId._id.toString() === loggedInInstructorId ? 'instchatbubbleright' : 'instchatbubbleleft'}`}>
+                                                {message?.senderId && message?.senderId._id.toString() !== loggedInInstructorId && (
+                                                    <p className='instsendername'>{message?.senderType === 'Instructor' ? (message?.senderId ? message?.senderId.instructorName : 'Unknown Instructor') : (message?.senderId ? message?.senderId.studentName : 'Unknown Student')}</p>
                                                 )}
-                                                <p className='instcontent'>{message.content}</p>
+                                                <p className='instcontent'>{message?.content}</p>
                                                 {/* <p>{message.createdAt}</p> */}
                                             </div>
                                         ))}
@@ -324,19 +330,19 @@ function InstMessage() {
                             <h5 style={{ fontSize: '17px', marginRight: '3%', color: 'Green' }}>{groupAdminName}</h5>
                         </div>
                         <ul>
-                            {groupMembers.students && groupMembers.students.map((student) => (
-                                <li key={student._id} className="d-flex justify-content-between align-items-center" style={{ fontSize: '17px' }}>
-                                    <span>{student.studentName}</span>
+                            {groupMembers?.students && groupMembers?.students.map((student) => (
+                                <li key={student?._id} className="d-flex justify-content-between align-items-center" style={{ fontSize: '17px' }}>
+                                    <span>{student?.studentName}</span>
                                     {loggedInInstructorId === selectedGroup?.groupAdmin && (
-                                        <button className="btn btn-delete" onClick={() => handleRemoveStudent(student._id)}>
+                                        <button className="btn btn-delete" onClick={() => handleRemoveStudent(student?._id)}>
                                             <i className="fa-solid fa-trash" style={{ fontSize: '19px' }}></i>
                                         </button>
                                     )}
                                 </li>
                             ))}
-                            {groupMembers.instructors && groupMembers.instructors.map((instructor) => (
-                                <li key={instructor._id} className="d-flex justify-content-between align-items-center" style={{ fontSize: '17px' }}>
-                                    <span>{instructor.instructorName}</span>
+                            {groupMembers?.instructors && groupMembers?.instructors.map((instructor) => (
+                                <li key={instructor?._id} className="d-flex justify-content-between align-items-center" style={{ fontSize: '17px' }}>
+                                    <span>{instructor?.instructorName}</span>
                                     {loggedInInstructorId === selectedGroup?.groupAdmin && (
                                         <button className="btn btn-delete" onClick={() => handleRemoveInstructor(instructor._id)}>
                                             <i className="fa-solid fa-trash" style={{ fontSize: '20px' }}></i>

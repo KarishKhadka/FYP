@@ -146,11 +146,11 @@ const Admstudentudent =()=> {
                             <div className="col">Student Email</div>
                             <div className="col">Actions</div>
                         </div>
-                        {students.map(student => (
-                        <div className="row" key={student._id}>
-                            <div className="col">{student.studentId}</div>
-                            <div className="col">{student.studentName}</div>
-                            <div className="col">{student.email}</div>
+                        {students?.map(student => (
+                        <div className="row" key={student?._id}>
+                            <div className="col">{student?.studentId}</div>
+                            <div className="col">{student?.studentName}</div>
+                            <div className="col">{student?.email}</div>
                             <div className="col">
                             <button className="btn btn-edit mr-2" onClick={() => handleOpenstudentEditModal(student)}>
                             <i className="fa-solid fa-pen"></i>

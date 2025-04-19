@@ -103,15 +103,15 @@ function Studentdash(){
                     <div className='stdleftbottomcard'>
                         <div className='stdbottomleftcard'>
                             <h4 id='welstddashn'>Notice</h4>
-                            {notices.map((notice, index)=>( 
+                            {notices?.map((notice, index)=>( 
                             <div className='stdnoticedetails' key={index}>
-                                <h5 className='stdnoticecoursename'>{notice.courseId.courseTitle}</h5>
-                                <p className='stdnoticedesc'> {notice.description}</p>
+                                <h5 className='stdnoticecoursename'>{notice?.courseId.courseTitle}</h5>
+                                <p className='stdnoticedesc'> {notice?.description}</p>
                                 <div className="stdnoticeinfo">
-                                    <p className='stdnoticeteacher'>{notice.teacher}</p>
-                                    <p className='stdnoticedate'>{formatDate(notice.date)}</p>
+                                    <p className='stdnoticeteacher'>{notice?.teacher}</p>
+                                    <p className='stdnoticedate'>{formatDate(notice?.date)}</p>
                                 </div>
-                                {index < notices.length - 1 && <hr className='stdnoticeseparator' />}
+                                {index < notices?.length - 1 && <hr className='stdnoticeseparator' />}
                             </div>
                             ))}
                         </div>
@@ -121,8 +121,8 @@ function Studentdash(){
                             </Link>
 
                             <ul className='crslistul'>
-                                {courses.map(course =>(
-                                    <li className='crslistli' key={course._id}>{course.courseTitle}</li>
+                                {courses?.map(course =>(
+                                    <li className='crslistli' key={course?._id}>{course?.courseTitle}</li>
                                 ))}
                             </ul>
                             
@@ -136,10 +136,10 @@ function Studentdash(){
                     <h4 id='welstddashe'>Upcoming Events</h4>
                     </Link>
                     <ul className='eventlistul'>
-                                {events.map(event =>(
-                                    <li className='eventlistli' key={event._id}>
-                                        <span className='eventtitle'>{event.eventTitle}</span>
-                                        <span className='eventdate'>{event.eventDate}</span>
+                                {events?.map(event =>(
+                                    <li className='eventlistli' key={event?._id}>
+                                        <span className='eventtitle'>{event?.eventTitle}</span>
+                                        <span className='eventdate'>{event?.eventDate}</span>
                                         </li>
                                 ))}
                             </ul>

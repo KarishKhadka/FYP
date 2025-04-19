@@ -104,12 +104,19 @@ function StdMessage() {
         }
     };
     useEffect(() => {
+        let interval;
         if (selectedGroup && loggedInStudentId) {
             const isStudentInGroup = groupMembers.students?.some(member => member._id === loggedInStudentId);
             if (isStudentInGroup) {
                  fetchMessages();
+
+                 interval = setInterval(() => {
+                    fetchMessages();
+                }, 2000);
             }
         }
+        return () => clearInterval(interval);
+
     }, [selectedGroup, loggedInStudentId, groupMembers]);
 
     return (

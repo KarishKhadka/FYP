@@ -101,12 +101,12 @@
     font-weight: 500;
 }
 #submitassignbtn:hover{
-    background-color:#bf93f4;
+    background-color:#646ae2;
     color:#032491;
 
 }
 .submittedassignbtn{
-    background-color:#bf93f4;
+    background-color:#646ae2;
     color:#032491;
     width: 11.5rem;
     height: 2.8rem;
