@@ -25,7 +25,7 @@
     padding-top: 0.7%;
     width: 22%;
     border: solid 2px;
-    border-color: #7E30E1;
+    border-color: #032491;
 }
 .stdcrscode{
     transition: 0.3s;
@@ -35,7 +35,7 @@
     padding-top: 0.8%;
     width: 22%;
     border: solid 2px;
-    border-color: #7E30E1;
+    border-color: #032491;
 }
 .stdcrsduration{
     transition: 0.3s;
@@ -45,12 +45,12 @@
     padding-top: 0.8%;
     width: 22%;
     border: solid 2px;
-    border-color: #7E30E1;
+    border-color: #032491;
 }
 .stdcrsdashcontent{
     display: flex;
     flex-direction: column;
-    background-color: #7E30E1;
+    background-color: #032491;
     width: 83%;
     border-radius: 5px;
     background-color: #f2f1f1;
