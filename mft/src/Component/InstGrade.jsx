@@ -112,7 +112,7 @@ function InstGrade() {
                         </div>
                         <div className='row justify-content-start'>
                             <Card.Text className="text-left" onClick={() => handleFileClick(submission)} style={{ cursor: 'pointer', fontSize: '20px' }}>{submission?.fileName}</Card.Text>
-                            <text><a style={{ textDecoration: 'none', fontSize: '18px', color: '#7E30E1' }} href={`http://localhost:3001/submissions/${submission.fileName}`} target="_blank" rel="noopener noreferrer">View File</a></text>
+                            <text><a style={{ textDecoration: 'none', fontSize: '18px', color: '#032491' }} href={`http://localhost:3001/submissions/${submission.fileName}`} target="_blank" rel="noopener noreferrer">View File</a></text>
                         </div>
                         <div className="row justify-content-end" >
                             <div className="col-auto">
@@ -157,7 +157,7 @@ function InstGrade() {
 
                         <div className="modal-footer">
                             <button type="button" className="btn btn-secondary" onClick={handleCloseGradeSubmissionModal}>Close</button>
-                            <button type="button" className="btn btn-primary" onClick={handleGradeSubmission} style={{ backgroundColor: "#7E30E1" }}>Grade submission</button>
+                            <button type="button" className="btn btn-primary" onClick={handleGradeSubmission} style={{ backgroundColor: "#032491" }}>Grade submission</button>
                         </div>
 
                     </div>

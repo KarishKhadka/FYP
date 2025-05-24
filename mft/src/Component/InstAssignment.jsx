@@ -146,7 +146,7 @@ const handleCloseassignmentDeleteModal = () =>{
         
         <div className="modal-footer">
             <button type="button" className="btn btn-secondary" onClick={handleCloseassignmentEditModal}>Close</button>
-            <button type="button" className="btn btn-primary" onClick={handleEditAssignment} style={{backgroundColor:"#7E30E1"}}>Edit Assignment</button>
+            <button type="button" className="btn btn-primary" onClick={handleEditAssignment} style={{backgroundColor:"#032491"}}>Edit Assignment</button>
         </div>
         
     </div>
@@ -170,7 +170,7 @@ const handleCloseassignmentDeleteModal = () =>{
         </div>
         <div className="modal-footer">
             <button type="button" className="btn btn-secondary" onClick={handleCloseassignmentDeleteModal}>Close</button>
-            <button type="button" className="btn btn-primary" onClick={handleDeleteAssignment} style={{backgroundColor:"#7E30E1"}}>Confirm</button>
+            <button type="button" className="btn btn-primary" onClick={handleDeleteAssignment} style={{backgroundColor:"#032491"}}>Confirm</button>
         </div>
         
     </div>

@@ -122,7 +122,7 @@ function InstructorCoursedash(){
             
             <div className="modal-footer">
                 <button type="button" className="btn btn-secondary" onClick={handleClosecreatefolderModal}>Close</button>
-                <button type="button" className="btn btn-primary" onClick={handleCreateFolder} style={{backgroundColor:"#7E30E1"}}>Create Folder</button>
+                <button type="button" className="btn btn-primary" onClick={handleCreateFolder} style={{backgroundColor:"#032491"}}>Create Folder</button>
             </div>
             
         </div>

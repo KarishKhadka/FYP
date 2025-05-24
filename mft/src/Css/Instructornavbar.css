@@ -28,16 +28,16 @@
 }
 .instlinks:hover{
     opacity: 100%;
-    color: #bf93f4;
+    color: #032491;
 }
 .instlinks.active {
     
-    background-color: #7E30E1;
+    background-color: #032491;
     color: white;
     opacity: 110%;
 }
 .inst-active{
-    background-color: #7E30E1;
+    background-color: #032491;
     color: white;
     opacity: 110%;
 }
@@ -87,7 +87,7 @@
         color: #bf93f4;
     }
     .inst-active{
-        background-color: #7E30E1;
+        background-color: #032491;
         color: white;
         opacity: 110;
     }
@@ -104,7 +104,7 @@
     }
     .instlinks.active {
     
-        background-color: #7E30E1;
+        background-color: #032491;
         color: white;
         opacity: 110%;
     }
@@ -141,10 +141,10 @@
     }
     .instlinks:hover{
         opacity: 100%;
-        color: #bf93f4;
+        color: #6257d6;
     }
     .inst-active{
-        background-color: #7E30E1;
+        background-color: #032491;
         color: white;
         opacity: 110;
     }
@@ -162,7 +162,7 @@
     }
     .instlinks.active {
     
-        background-color: #7E30E1;
+        background-color: #032491;
         color: white;
         opacity: 110%;
     }

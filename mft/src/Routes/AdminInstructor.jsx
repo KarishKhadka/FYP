@@ -250,7 +250,7 @@ const AdminInstructor =()=> {
             
             <div className="modal-footer">
                 <button type="button" className="btn btn-secondary" onClick={handleCloseInstModal}>Close</button>
-                <button type="button" className="btn btn-primary" onClick={handleAddInstructor} style={{backgroundColor:"#7E30E1"}}>Add Instructor</button>
+                <button type="button" className="btn btn-primary" onClick={handleAddInstructor} style={{backgroundColor:"#032491"}}>Add Instructor</button>
             </div>
             
         </div>
@@ -287,7 +287,7 @@ const AdminInstructor =()=> {
             
             <div className="modal-footer">
                 <button type="button" className="btn btn-secondary" onClick={handleCloseinstEditModal}>Close</button>
-                <button type="button" className="btn btn-primary" onClick={handleEditInstructor} style={{backgroundColor:"#7E30E1"}}>Edit Instructor</button>
+                <button type="button" className="btn btn-primary" onClick={handleEditInstructor} style={{backgroundColor:"#032491"}}>Edit Instructor</button>
             </div>
             
         </div>
@@ -309,7 +309,7 @@ const AdminInstructor =()=> {
             
             <div className="modal-footer">
                 <button type="button" className="btn btn-secondary" onClick={handleCloseinstDeleteModal}>Close</button>
-                <button type="button" className="btn btn-primary" onClick={handleDeleteInstructor} style={{backgroundColor:"#7E30E1"}}>Confirm</button>
+                <button type="button" className="btn btn-primary" onClick={handleDeleteInstructor} style={{backgroundColor:"#032491"}}>Confirm</button>
             </div>
             
         </div>

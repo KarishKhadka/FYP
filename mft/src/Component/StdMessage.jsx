@@ -162,7 +162,7 @@ function StdMessage() {
                         value={newMessage}
                         onChange={(e) => setNewMessage(e.target.value)}
                     />
-                    <SendIcon style={{fontSize:'40px', color:"#7E30E1"}} className="sendmessageicon" onClick={handleMessageSubmit}/>
+                    <SendIcon style={{fontSize:'40px', color:"#032491"}} className="sendmessageicon" onClick={handleMessageSubmit}/>
                 </div>
                 </>
                 ) : (

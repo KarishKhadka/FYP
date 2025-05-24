@@ -114,7 +114,7 @@ const handleCloseshowGradeModal = () =>{
                               <Card.Title className="text-left">{grade.assignmentId.name}</Card.Title>
                           </div>
                           <div className='col-auto ml-auto'>
-                          <Card.Title className="text-right" style={{color:'#7E30E1'}}>Marks: {grade.achievedMarks} / {grade.fullMarks} </Card.Title>
+                          <Card.Title className="text-right" style={{color:'#032491'}}>Marks: {grade.achievedMarks} / {grade.fullMarks} </Card.Title>
                           </div>
                       </div>
                   </Card.Body>  

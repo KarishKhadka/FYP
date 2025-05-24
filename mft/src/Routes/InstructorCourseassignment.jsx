@@ -119,7 +119,7 @@ function InstructorCourseAssignment(){
             
             <div className="modal-footer">
                 <button type="button" className="btn btn-secondary" onClick={handleClosecreateAssignmentModal}>Close</button>
-                <button type="button" className="btn btn-primary" onClick={handleCreateAssignment} style={{backgroundColor:"#7E30E1"}}>Create Assignment</button>
+                <button type="button" className="btn btn-primary" onClick={handleCreateAssignment} style={{backgroundColor:"#032491"}}>Create Assignment</button>
             </div>
             
         </div>

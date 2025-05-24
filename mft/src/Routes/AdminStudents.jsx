@@ -196,7 +196,7 @@ const Admstudentudent =()=> {
             
             <div className="modal-footer">
                 <button type="button" className="btn btn-secondary" onClick={handleClosestudentEditModal}>Close</button>
-                <button type="button" className="btn btn-primary" onClick={handleEditStudent} style={{backgroundColor:"#7E30E1"}}>Edit Student</button>
+                <button type="button" className="btn btn-primary" onClick={handleEditStudent} style={{backgroundColor:"#032491"}}>Edit Student</button>
             </div>
             
         </div>
@@ -218,7 +218,7 @@ const Admstudentudent =()=> {
             
             <div className="modal-footer">
                 <button type="button" className="btn btn-secondary" onClick={handleClosestudentDeleteModal}>Close</button>
-                <button type="button" className="btn btn-primary" onClick={handleDeleteStudent} style={{backgroundColor:"#7E30E1"}}>Confirm</button>
+                <button type="button" className="btn btn-primary" onClick={handleDeleteStudent} style={{backgroundColor:"#032491"}}>Confirm</button>
             </div>
             
         </div>

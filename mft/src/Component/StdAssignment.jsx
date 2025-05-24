@@ -179,7 +179,7 @@ const isPastDueDate = (dueDate) => {
             
             <div className="modal-footer">
                 <button type="button" className="btn btn-secondary" onClick={handleClosesubmitAssignmentModal}>Close</button>
-                <button type="button" className="btn btn-primary" onClick={handlesubmitAssignment} style={{backgroundColor:"#7E30E1"}}>Submit Assignment</button>
+                <button type="button" className="btn btn-primary" onClick={handlesubmitAssignment} style={{backgroundColor:"#032491"}}>Submit Assignment</button>
             </div>
             
         </div>

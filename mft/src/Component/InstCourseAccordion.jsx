@@ -192,7 +192,7 @@ const handleClosefolderDeleteModal = () =>{
     
     <div className="modal-footer">
         <button type="button" className="btn btn-secondary" onClick={handleClosefolderEditModal}>Close</button>
-        <button type="button" className="btn btn-primary" onClick={handleEditFolder} style={{backgroundColor:"#7E30E1"}}>Edit Folder</button>
+        <button type="button" className="btn btn-primary" onClick={handleEditFolder} style={{backgroundColor:"#032491"}}>Edit Folder</button>
     </div>
     
 </div>
@@ -216,7 +216,7 @@ const handleClosefolderDeleteModal = () =>{
     </div>
     <div className="modal-footer">
         <button type="button" className="btn btn-secondary" onClick={handleClosefolderDeleteModal}>Close</button>
-        <button type="button" className="btn btn-primary" onClick={handleDeleteFolder} style={{backgroundColor:"#7E30E1"}}>Confirm</button>
+        <button type="button" className="btn btn-primary" onClick={handleDeleteFolder} style={{backgroundColor:"#032491"}}>Confirm</button>
     </div>
     
 </div>

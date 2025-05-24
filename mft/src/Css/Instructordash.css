@@ -40,7 +40,7 @@
     gap: 2%;
 }
 #instname{
-    color: #7E30E1;
+    color: #032491;
 }
 .instleftbottomcard{
     display: flex;
@@ -259,7 +259,7 @@
         font-size: 20px;
     }
     #instname{
-        color: #7E30E1;
+        color: #032491;
         font-size: 20px;
     }
     .instrleftcard{

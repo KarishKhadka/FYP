@@ -137,7 +137,7 @@ const handleFileClick = (file) =>{
     
     <div className="modal-footer">
         <button type="button" className="btn btn-secondary" onClick={handleCloseFileEditModal}>Close</button>
-        <button type="button" className="btn btn-primary" onClick={handleRenameFile} style={{backgroundColor:"#7E30E1"}}>Rename File</button>
+        <button type="button" className="btn btn-primary" onClick={handleRenameFile} style={{backgroundColor:"#032491"}}>Rename File</button>
     </div>
     
 </div>
@@ -161,7 +161,7 @@ const handleFileClick = (file) =>{
     </div>
     <div className="modal-footer">
         <button type="button" className="btn btn-secondary" onClick={handleCloseFileDeleteModal}>Close</button>
-        <button type="button" className="btn btn-primary" onClick={handleDeleteFile} style={{backgroundColor:"#7E30E1"}}>Confirm</button>
+        <button type="button" className="btn btn-primary" onClick={handleDeleteFile} style={{backgroundColor:"#032491"}}>Confirm</button>
     </div>
     
 </div>

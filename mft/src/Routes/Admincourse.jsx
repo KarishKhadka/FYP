@@ -258,7 +258,7 @@ const fetchCourses = async () => {
             
             <div className="modal-footer" style={{ padding: '0.4rem'}}>
                 <button type="button" className="btn btn-secondary" onClick={handleCloseModal}>Close</button>
-                <button type="button" className="btn btn-primary" onClick={handleAddCourse} style={{backgroundColor:"#7E30E1"}}>Add Course</button>
+                <button type="button" className="btn btn-primary" onClick={handleAddCourse} style={{backgroundColor:"#032491"}}>Add Course</button>
             </div>
             
         </div>
@@ -302,7 +302,7 @@ const fetchCourses = async () => {
             
             <div className="modal-footer" style={{ padding: '0.4rem'}}>
                 <button type="button" className="btn btn-secondary" onClick={handleClosecrsEditModal}>Close</button>
-                <button type="button" className="btn btn-primary" onClick={handleEditCourse} style={{backgroundColor:"#7E30E1"}}>Edit Course</button>
+                <button type="button" className="btn btn-primary" onClick={handleEditCourse} style={{backgroundColor:"#032491"}}>Edit Course</button>
             </div>
             
         </div>
@@ -324,7 +324,7 @@ const fetchCourses = async () => {
             
             <div className="modal-footer">
                 <button type="button" className="btn btn-secondary" onClick={handleClosecrsDeleteModal}>Close</button>
-                <button type="button" className="btn btn-primary" onClick={handleDeleteCourse} style={{backgroundColor:"#7E30E1"}}>Confirm</button>
+                <button type="button" className="btn btn-primary" onClick={handleDeleteCourse} style={{backgroundColor:"#032491"}}>Confirm</button>
             </div>
             
         </div>

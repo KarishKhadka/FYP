@@ -31,7 +31,7 @@
 }
 .searchicondiv{
     width: 9%;
-    background-color: #c495fc;
+    background-color: #032491;
     border-radius:  0px 15px 15px 0px;
     padding: 8px;
 }
@@ -45,7 +45,7 @@
 }
 #instlibsearchbox{
     cursor: pointer;
-    background-color: #AF70FE;
+    background-color: #95a8e7;
     width: 100%;
     height: 100%;
     display: flex;
@@ -125,7 +125,7 @@ margin-top: 2.4%;
 }
 .bookscardtop{
     height: 67%;
-    background-color:#AF70FE ;
+    background-color:#3d2acf ;
     border-radius: 10px 10px 0px 0px;
 }
 .bookscardbottom{
@@ -150,7 +150,7 @@ align-self: auto;
     transition: 0.2s ease-in-out;
     border: none;
     color:white;
-    background-color: #7E30E1;
+    background-color: #032491;
     width: 8rem;
     height: 2rem;
     border-radius: 6px;
@@ -158,8 +158,8 @@ align-self: auto;
     margin-top: 30%;
 }
 #readmorebtn:hover{
-    background-color:#bf93f4;
-    color:#7E30E1;
+    background-color:#708adf;
+    color:#032491;
 }
 .overlay {
     position: fixed;

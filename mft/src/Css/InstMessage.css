@@ -52,7 +52,7 @@
 }
 #creategroupbtn{
     color:white;
-    background-color: #7E30E1;
+    background-color: #032491;
     width: 4.5rem;
     height: 2rem;
     border-radius: 6px;
@@ -64,8 +64,8 @@
     margin-left: 2%;
 }
 #creategroupbtn:hover{
-    background-color:#bf93f4;
-    color:#7E30E1;
+    background-color:#748fe7;
+    color:#032491;
 }
 .instmemberslist{
     height: 21%;
@@ -93,7 +93,7 @@
 }
 .addmembersbtn{
     color:white;
-    background-color: #7E30E1;
+    background-color: #032491;
     width: 10rem;
     height: 2rem;
     border-radius: 6px;
@@ -106,8 +106,8 @@
     margin-top: 10%;
 }
 .addmembersbtn:hover{
-    background-color:#bf93f4;
-    color:#7E30E1;
+    background-color:#7792ec;
+    color:#032491;
 }
 
 .inststudentlist{
@@ -162,7 +162,7 @@ width: 17rem;
 
 .instchatbubbleright {
     padding-top: 2.5%;
-    background-color: #bf93f4; 
+    background-color: #7892e7; 
     align-self: flex-end;
     height: auto;
     
@@ -194,7 +194,7 @@ width: 17rem;
 .instchatgroupname{
     height:7% ;
     margin-top: -1%;
-    background-color:#bf93f4;
+    background-color:#7893ed;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transition: 0.2s ease-in-out;
@@ -204,7 +204,7 @@ width: 17rem;
 }
 .instnotaddedtogrp{
     margin-top: 50%;
-    color: rgb(239, 41, 41);
+    color: rgb(207, 30, 30);
 }
 
 @media (max-width: 768px) {

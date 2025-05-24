@@ -309,7 +309,7 @@ function InstMessage() {
                                             value={newMessage}
                                             onChange={(e) => setNewMessage(e.target.value)}
                                         />
-                                        <SendIcon style={{ fontSize: '40px', color: "#7E30E1" }} className="sendmessageicon" onClick={handleMessageSubmit} />
+                                        <SendIcon style={{ fontSize: '40px', color: "#032491" }} className="sendmessageicon" onClick={handleMessageSubmit} />
                                     </div>
                                 </>
                             ) : (
@@ -394,7 +394,7 @@ function InstMessage() {
                         </div>
                         <div className="modal-footer">
                             <button type="button" className="btn btn-secondary" onClick={handleCloseGroupDeleteModal}>Close</button>
-                            <button type="button" className="btn btn-primary" onClick={handleDeleteGroup} style={{ backgroundColor: "#7E30E1" }}>Confirm</button>
+                            <button type="button" className="btn btn-primary" onClick={handleDeleteGroup} style={{ backgroundColor: "#032491" }}>Confirm</button>
                         </div>
                     </div>
                 </div>

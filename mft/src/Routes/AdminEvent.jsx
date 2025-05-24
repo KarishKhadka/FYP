@@ -248,7 +248,7 @@ const fetchEvents = async () => {
             
             <div className="modal-footer">
                 <button type="button" className="btn btn-secondary" onClick={handleCloseeventModal}>Close</button>
-                <button type="button" className="btn btn-primary" onClick={handleAddEvent} style={{backgroundColor:"#7E30E1"}}>Add Event</button>
+                <button type="button" className="btn btn-primary" onClick={handleAddEvent} style={{backgroundColor:"#032491"}}>Add Event</button>
             </div>
             
         </div>
@@ -288,7 +288,7 @@ const fetchEvents = async () => {
             
             <div className="modal-footer">
                 <button type="button" className="btn btn-secondary" onClick={handleCloseeventEditModal}>Close</button>
-                <button type="button" className="btn btn-primary" onClick={handleEditEvent} style={{backgroundColor:"#7E30E1"}}>Edit Course</button>
+                <button type="button" className="btn btn-primary" onClick={handleEditEvent} style={{backgroundColor:"#032491"}}>Edit Course</button>
             </div>
             
         </div>
@@ -310,7 +310,7 @@ const fetchEvents = async () => {
             {errors && (<div className="alert alert-danger mt-2">{errors}</div>)}  
             <div className="modal-footer">
                 <button type="button" className="btn btn-secondary" onClick={handleCloseeventDeleteModal}>Close</button>
-                <button type="button" className="btn btn-primary" onClick={handleDeleteEvent} style={{backgroundColor:"#7E30E1"}}>Confirm</button>
+                <button type="button" className="btn btn-primary" onClick={handleDeleteEvent} style={{backgroundColor:"#032491"}}>Confirm</button>
             </div>
             
         </div>

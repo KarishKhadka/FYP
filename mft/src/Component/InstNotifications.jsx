@@ -152,7 +152,7 @@ const handleClosenotificationDeleteModal = () =>{
         
         <div className="modal-footer">
             <button type="button" className="btn btn-secondary" onClick={handleClosenotificationEditModal}>Close</button>
-            <button type="button" className="btn btn-primary" onClick={handleEditNotification} style={{backgroundColor:"#7E30E1"}}>Edit Notification</button>
+            <button type="button" className="btn btn-primary" onClick={handleEditNotification} style={{backgroundColor:"#032491"}}>Edit Notification</button>
         </div>
         
     </div>
@@ -176,7 +176,7 @@ const handleClosenotificationDeleteModal = () =>{
         </div>
         <div className="modal-footer">
             <button type="button" className="btn btn-secondary" onClick={handleClosenotificationDeleteModal}>Close</button>
-            <button type="button" className="btn btn-primary" onClick={handleDeleteNotification} style={{backgroundColor:"#7E30E1"}}>Confirm</button>
+            <button type="button" className="btn btn-primary" onClick={handleDeleteNotification} style={{backgroundColor:"#032491"}}>Confirm</button>
         </div>
         
     </div>

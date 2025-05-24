@@ -20,7 +20,7 @@
 }
 #addstudentbtn{
     color:white;
-    background-color: #7E30E1;
+    background-color: #032491;
     width: 13rem;
     height: 2.8rem;
     margin-top: 1.5rem;
@@ -33,6 +33,6 @@
     margin-left: 78%;
 }
 #addstudentbtn:hover{
-    background-color:#bf93f4;
-    color:#7E30E1;
+    background-color:#7893ec;
+    color:#032491;
 }

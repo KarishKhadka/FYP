@@ -25,7 +25,7 @@
   }
 #addcrsbtn{
     color:white;
-    background-color: #7E30E1;
+    background-color: #032491;
     width: 13rem;
     height: 2.8rem;
     margin-top: 1.5rem;
@@ -38,15 +38,15 @@
     margin-left: 78%;
 }
 #addcrsbtn:hover{
-    background-color:#bf93f4;
-    color:#7E30E1;
+    background-color:#829bed;
+    color:#032491;
 }
 .btn-edit{
     outline: none;
     border: none;
 }
 .btn-edit i{
-    color: #7E30E1; /* Set background color for edit button */
+    color: #032491; /* Set background color for edit button */
     background-color: white;
     font-size: 20px;
     outline: none;
@@ -58,7 +58,7 @@
     border: none;
 }
   .btn-delete i{
-    color: #FF1B15; /* Set background color for delete button */
+    color: #cf221c; /* Set background color for delete button */
     background-color: white;
     font-size: 20px;
     outline: none;

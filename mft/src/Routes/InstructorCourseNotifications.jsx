@@ -134,7 +134,7 @@ function InstructorCourseNotifications(){
             
             <div className="modal-footer">
                 <button type="button" className="btn btn-secondary" onClick={handleClosecreateNotificationModal}>Close</button>
-                <button type="button" className="btn btn-primary" onClick={handleCreateNotification} style={{backgroundColor:"#7E30E1"}}>Create Notification</button>
+                <button type="button" className="btn btn-primary" onClick={handleCreateNotification} style={{backgroundColor:"#032491"}}>Create Notification</button>
             </div>
             
         </div>

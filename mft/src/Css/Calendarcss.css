@@ -18,11 +18,11 @@
      /* Add box shadow to popover */
   }
   .rbc-event {
-    background-color: #7E30E1; 
+    background-color: #032491; 
     color: #fff; 
   }
   .rbc-event.rbc-selected {
-    background-color: #7E30E1; /* Change background color */
+    background-color: #032491; /* Change background color */
     color: #fff; /* Change text color */
   }
   
@@ -41,13 +41,13 @@
    /* Center align text in headers and date cells */
 }
 .rbc-today {
-    background-color: #dac4f8; /* Change background color of today's date */
+    background-color: #8181e8; /* Change background color of today's date */
     border: 1px solid #ccc; /* Add border to today's date *//* Make today's date circle-shaped */
   }
   
   /* Styling for selected date */
   .rbc-selected {
-    background-color: #bf93f4; /* Change background color of selected date */
+    background-color: #6381e6; /* Change background color of selected date */
     color: #fff; /* Change text color of selected date */
   }
   
